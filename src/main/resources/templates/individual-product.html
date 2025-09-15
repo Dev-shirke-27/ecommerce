@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -122,12 +121,12 @@
 
                 <!-- Admin Actions -->
                 <div class="mt-4 action-buttons d-flex gap-3">
-                    <a th:href="@{'/admin/product/update/' + ${productRequest.productId}}"
+                    <a th:href="@{'/admin/product/' + ${productRequest.productId}+'/edit'}"
                        class="btn btn-warning btn-lg">
                         <i class="fa-solid fa-pen-to-square"></i> Update
                     </a>
 
-                    <a th:href="@{'/admin/product/delete/' + ${productRequest.productId}}"
+                    <a th:href="@{'/admin/product/' + ${productRequest.productId}+'/delete'}"
                        class="btn btn-danger btn-lg"
                        onclick="return confirm('Are you sure you want to delete this product?');">
                         <i class="fa-solid fa-trash"></i> Delete
